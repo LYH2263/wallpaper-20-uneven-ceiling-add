@@ -8,5 +8,6 @@ onMounted(async () => { wall.value = await getJSON(`/api/walls/${props.id}`) })
 <template>
   <div class="page" v-if="wall"><h1>{{ wall.name }}</h1>
   <p v-if="wall.data_quality==='dirty'" class="warn">{{ wall.note }}</p>
-  <p>周长 {{ wall.perimeter }} m，墙高 {{ wall.height }} m</p></div>
+  <p>周长 {{ wall.perimeter }} m，墙高 {{ wall.height }} m</p>
+  <p v-if="wall.uneven_ceiling" class="hint">建议启用不齐顶加长</p></div>
 </template>

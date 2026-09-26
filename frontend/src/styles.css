@@ -7,3 +7,6 @@ body { margin: 0; font-family: Georgia, serif; background: #faf3e8; }
 .strip { width: 14px; background: linear-gradient(#c49a6c, #8b5a2b); border-radius: 2px 2px 0 0; }
 .roll-chip { display: inline-block; margin: 0.25rem; padding: 0.5rem; background: #fff; border: 1px dashed #6b4226; }
 .warn { color: #a00; }
+.hint { color: #6b4226; font-style: italic; }
+.page label { margin-right: 0.75rem; }
+.page input[type=number] { width: 5rem; }
