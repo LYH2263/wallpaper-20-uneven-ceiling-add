@@ -39,4 +39,13 @@ def init_db():
         )
         conn.execute("INSERT INTO settings(key,value) VALUES ('unit','roll')")
         conn.commit()
+
+    # 幂等补齐：旧库升级也提供默认加长；只影响后续测算，不改写旧 run
+    if not conn.execute(
+        "SELECT 1 FROM settings WHERE key='uneven_ceiling_extra_cm'"
+    ).fetchone():
+        conn.execute(
+            "INSERT INTO settings(key,value) VALUES ('uneven_ceiling_extra_cm','10.0')"
+        )
+        conn.commit()
     conn.close()

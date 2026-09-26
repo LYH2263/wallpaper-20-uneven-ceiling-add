@@ -7,3 +7,12 @@ body { margin: 0; font-family: Georgia, serif; background: #faf3e8; }
 .strip { width: 14px; background: linear-gradient(#c49a6c, #8b5a2b); border-radius: 2px 2px 0 0; }
 .roll-chip { display: inline-block; margin: 0.25rem; padding: 0.5rem; background: #fff; border: 1px dashed #6b4226; }
 .warn { color: #a00; }
+.ok { color: #1a7f37; }
+.hint { color: #6b5a48; font-size: 0.85rem; }
+.uc-toggle { margin: 0 0.5rem; }
+.uc-input { width: 5rem; }
+.uc-hint { color: #8b5a2b; font-size: 0.85rem; }
+.setting-row { background: #fff; border: 1px dashed #6b4226; padding: 0.75rem 1rem; max-width: 32rem; }
+.setting-row input { margin: 0 0.35rem; }
+.rec-box { margin-top: 0.75rem; background: #fff; border: 1px dashed #6b4226; padding: 0.5rem 1rem; max-width: 32rem; }
+.rec-box table td { padding: 0.15rem 0.75rem 0.15rem 0; }
